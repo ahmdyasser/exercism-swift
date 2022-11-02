@@ -12,7 +12,34 @@
 		96A9F9C8290DCAAC006667F7 /* NucleotideCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F9C6290DCAAC006667F7 /* NucleotideCount.swift */; };
 		96A9F9C9290DCAAC006667F7 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F9C7290DCAAC006667F7 /* Triangle.swift */; };
 		96A9F9CB290DE532006667F7 /* Lasagna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F9CA290DE532006667F7 /* Lasagna.swift */; };
+		96A9F9D0290DF578006667F7 /* NucleotideCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F9C6290DCAAC006667F7 /* NucleotideCount.swift */; };
+		96A9F9D1290DF578006667F7 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F9C7290DCAAC006667F7 /* Triangle.swift */; };
+		96A9F9D2290DF578006667F7 /* Lasagna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F9CA290DE532006667F7 /* Lasagna.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		96A9F9CF290DF54F006667F7 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = file.rcproject;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# rctool\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		96A9F9CC290DF416006667F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A9F9A9290DCA0C006667F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A9F9B0290DCA0C006667F7;
+			remoteInfo = Exercism;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		96A9F9AF290DCA0C006667F7 /* CopyFiles */ = {
@@ -120,8 +147,10 @@
 				96A9F9BD290DCA19006667F7 /* Resources */,
 			);
 			buildRules = (
+				96A9F9CF290DF54F006667F7 /* PBXBuildRule */,
 			);
 			dependencies = (
+				96A9F9CD290DF416006667F7 /* PBXTargetDependency */,
 			);
 			name = ExercismTests;
 			productName = ExercismTests;
@@ -191,11 +220,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A9F9D0290DF578006667F7 /* NucleotideCount.swift in Sources */,
+				96A9F9D1290DF578006667F7 /* Triangle.swift in Sources */,
+				96A9F9D2290DF578006667F7 /* Lasagna.swift in Sources */,
 				96A9F9C2290DCA19006667F7 /* ExercismTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96A9F9CD290DF416006667F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A9F9B0290DCA0C006667F7 /* Exercism */;
+			targetProxy = 96A9F9CC290DF416006667F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		96A9F9B6290DCA0C006667F7 /* Debug */ = {
